@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+
+<launch>
+    <arg name="room" default="fozzy" /> 
+
+    <node pkg="map_server" type="map_server" name="map_server" args="$(find multi_robot_fozzy)/cfg/maps/$(arg room)/map.yaml"/>
+</launch>
